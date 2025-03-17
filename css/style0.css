@@ -1,0 +1,142 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+  background-color: var(--bg);
+  color: var(--color);
+}
+
+:root {
+  --bg: #000000;
+  --color: #ffffff;
+  --colorDark: #af9f09;
+}
+
+/* Style Untuk Heading */
+header {
+  border-bottom: 2px solid;
+  padding: 1rem;
+  display: flex;
+  color: #292502;
+}
+
+header .head {
+  /* border: 2px solid; */
+  justify-items: center;
+  width: 100%;
+}
+
+header .head h1 span {
+  color: var(--colorDark);
+}
+
+/* Style untuk Konten */
+.content {
+  /* border: 2px solid; */
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid; */
+}
+
+.content h2 {
+  /* border: 2px solid; */
+  justify-content: center;
+  padding: 0.5rem;
+  display: flex;
+}
+
+.content .card-proyek {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.content .proyek {
+  /* border: 2px solid; */
+  width: calc(40% - 0.5rem);
+
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.content .proyek h2 {
+  display: flex;
+  font-size: medium;
+}
+
+.content .proyek p {
+  text-align: justify;
+  padding: 1rem;
+}
+.content .proyek .btn {
+  /* border: 2px solid; */
+  padding: 0.5rem;
+  margin: 1rem;
+  width: 8rem;
+  text-decoration: none;
+  background-color: var(--colorDark);
+  color: var(--bg);
+  font-weight: 500;
+  border-radius: 10px;
+  /* transition: transform 0.3s ease; */
+  transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: transform;
+}
+
+.content .proyek .btn:hover {
+  transform: scale(1.1);
+}
+
+/* Style Untuk Footer */
+
+footer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid; */
+  align-items: center;
+}
+
+footer h2 {
+  padding: 0.5rem;
+}
+footer h2 span {
+  color: var(--colorDark);
+}
+
+footer .social-links {
+  bottom: 0;
+  /* border: 2px solid; */
+  display: flex;
+  gap: 1.8rem;
+  padding: 1rem;
+}
+
+footer .social-links .linkedIn {
+  gap: 0.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+footer .social-links img {
+  width: 2rem;
+  height: auto;
+}
+
+footer .social-links a {
+  text-decoration: none;
+}
+
+footer p {
+  padding: 1rem;
+  font-size: small;
+  font-weight: 200;
+}
